@@ -7,7 +7,7 @@ import { ImageComponent } from './image/image.component';
 const routes: Routes = [
   { path: 'signature', component: SignatureComponent },
   { path: 'image', component: ImageComponent },
-  { path: '', redirectTo: '/signature', pathMatch: 'full' }
+  { path: '', redirectTo: '/image', pathMatch: 'full' }
 ];
 
 @NgModule({
