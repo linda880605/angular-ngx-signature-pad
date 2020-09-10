@@ -1,0 +1,20 @@
+* {
+  font-family: Microsoft JhengHei;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  margin: 4px 2px;
+  font-size: 20px;
+}
+
+@media(max-width: 575px) {
+  img {
+    width: 100%;
+  }
+}
+
+/* div {
+  width: fit-content;
+} */

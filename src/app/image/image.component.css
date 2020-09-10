@@ -1,0 +1,13 @@
+* {
+  font-family: Microsoft JhengHei;
+}
+
+.modal-body {
+  width: fit-content;
+}
+
+@media(max-width: 575px) {
+  img {
+    width: 100%;
+  }
+}
