@@ -8,8 +8,6 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ImageComponent implements OnInit {
 
-  myVar: any;
-
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
@@ -19,6 +17,9 @@ export class ImageComponent implements OnInit {
     this.modalService.open(content, { size: 'lg' });
   }
 
-  onChangeVar(variable: string) {}
+  onChangeVar(variable: string) {
+    const obj = <HTMLImageElement>document.getElementById('img');
+    obj.src = variable;
+  }
 
 }

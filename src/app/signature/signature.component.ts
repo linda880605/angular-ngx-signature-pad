@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild, Output, EventEmitter } from '@angular/cor
 import { NgxSignaturePadComponent, NgxSignatureOptions } from '@eve-sama/ngx-signature-pad';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-
 @Component({
   selector: 'app-signature',
   templateUrl: './signature.component.html',
@@ -36,10 +35,7 @@ export class SignatureComponent implements OnInit {
   public save(): void {
     let base64: string;
     base64 = this.signature.toDataURL();
-    const obj = <HTMLImageElement>document.getElementById('img');
-    obj.src = base64;
-
-    console.log('save');
+    this.onChangeVar.emit(base64);
   }
 
   openLg(content) {
